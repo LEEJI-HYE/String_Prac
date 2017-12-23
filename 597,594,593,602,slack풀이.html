@@ -74,5 +74,40 @@
 
 <hr/>
 
+    <h3>jungol 문제풀이-js 올린문제</h3><br/>
+    <h5>1. keepthefaith00@gmail.com 과 같은 이메일 주소 문자열을 입력 받은 후
+        2. @를 기준으로 메일 id(keepthefaith00)와 도메인(gmail.com)을 구분하여 출력하시오.</h5>
+
+    <h6>입력 예 : </h6><p/>
+    <h6>keepthefaith00@gmail.com</h6><p/>
+    <h6>출력 예 : </h6><p/>
+    <h6>메일id : keepthefaith00</p>
+        도메인 : gmail.com</h6></p>
+
+    <h2>풀이 -------------------------------------------------</h2>
+    <!-- 문제 풀기 -->
+
+    <!--입력부-->
+    E-mail: <input type="text" id="email"/></p>
+    <button onclick="solveJungol()">입력</button>
+
+    <!--출력부-->
+    <p id="resultJungol-id"></p>
+    <p id="resultJungol-domain"></p>
+
+    <script>
+        function solveJungol(){
+        		var beforeEmail = document.getElementById('email').value;
+        		var afterEmail = beforeEmail.split('@');
+
+        		console.log(afterEmail);
+
+        		document.getElementById('resultJungol-id').innerHTML = afterEmail[0];
+        		document.getElementById('resultJungol-domain').innerHTML = afterEmail[1];
+        }
+    </script>
+
+<hr/>
+
 </body>
 </html>
