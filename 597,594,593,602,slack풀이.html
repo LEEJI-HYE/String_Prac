@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <h3>597 : 문자열1 - 자가진단5</h3><br/>
+    <h5>두 개의 문자열을 입력받아서 두 문자열의 길이의 합을 출력하는 프로그램을 작성하시오. 각 문자열의 길이는 20자 미만이다. </h5>
+
+    <h6>입력 예 : </h6><p/>
+    <h6>Korean <p/>
+        English</h6><p/>
+    <h6>출력 예 : </h6><p/>
+    <h6>13</h6>
+
+    <h2>풀이 -------------------------------------------------</h2>
+    <!-- 문제 풀기 -->
+
+    <!--입력부-->
+    Nation1 : <input type="text" id="input1"/></p>
+    Nation2 : <input type="text" id="input2"/></p>     
+    <button onclick="solve597()">입력</button>
+
+    <!--출력부-->
+    <p id="result597"></p>
+
+    <script>
+        function solve597(){
+        	var inputTag1 = document.getElementById('input1').value;
+        	var inputTag2 = document.getElementById('input2').value;
+
+        	var strPlus = inputTag1 + inputTag2;
+
+        	document.getElementById("result597").innerHTML = strPlus.length;
+
+        }
+    </script>
+
+<hr/>
+
+    <h3>594 : 문자열1 - 자가진단2</h3><br/>
+    <h5>문자열을 입력받은 뒤 그 문자열을 이어서 두 번 출력하는 프로그램을 작성하시오. 
+        문자열의 길이는 100이하이다.</h5>
+
+    <h6>입력 예 : </h6><p/>
+    <h6>ASDFG</h6><p/>
+    <h6>출력 예 : </h6><p/>
+    <h6>ASDFGASDFG</h6>
+
+    <h2>풀이 -------------------------------------------------</h2>
+    <!-- 문제 풀기 -->
+
+    <!--입력부-->
+    String1 : <input type="text" id="double"/></p>
+    <button onclick="solve594()">입력</button>
+
+    <!--출력부-->
+    <p id="result594"></p>
+
+    <script>
+        function solve594(){
+        	var doublestr = document.getElementById('double').value;
+
+        	var strMultiple = doublestr.repeat(2);
+
+        	if(strMultiple.length <= 100){
+
+        	}
+
+        	document.getElementById("result594").innerHTML = strMultiple;
+
+        }
+    </script>
+
+<hr/>
+
+</body>
+</html>
